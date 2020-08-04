@@ -34,6 +34,28 @@ public class Zamowienie extends JFrame
         this.setBounds(500, 550, 500, 500);
         panelWpisywaniaZamowienia.add(daneZamowinia);
         panelPrzyciskow.add(wyslij);
+        this.getContentPane().add(wyslij,BorderLayout.SOUTH);
+        this.getContentPane().add(panelWpisywaniaZamowienia,BorderLayout.NORTH);
+        this.getContentPane().add(daneZamowinia);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
+        wyslij.addActionListener(new ActionListener() {
+           
+            public void actionPerformed(ActionEvent e) 
+            {
+               
+               
+                JOptionPane.showMessageDialog(rootPane, "Twoje zamównie zostało wysłane");
+                System.exit(0);
+                
+         
+
+                    // narazie zamyka cały program ale trzeba ustalic żeby zamykało tylko okno zamowienia
+                      
+            }
+
+           
+        });
         
 
            

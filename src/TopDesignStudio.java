@@ -21,6 +21,26 @@ public class TopDesignStudio extends javax.swing.JFrame {
     public TopDesignStudio() {
         initComponents();
         this.setTitle("Top Design Studio");
+         noweZamowienie.addActionListener(new ActionListener() {
+        
+            public void actionPerformed(ActionEvent e) 
+            {
+                
+                new Zamowienie(wpisanieZamowienia).setVisible(true);
+                        
+            }
+            
+        });
+          lakiernia.addActionListener(new ActionListener() {
+         
+            public void actionPerformed(ActionEvent e) 
+            {
+                
+                JOptionPane.showMessageDialog(rootPane, "Sylwester Czerniewicz 697350243");
+                       
+                
+            }
+        });
         
         
        
